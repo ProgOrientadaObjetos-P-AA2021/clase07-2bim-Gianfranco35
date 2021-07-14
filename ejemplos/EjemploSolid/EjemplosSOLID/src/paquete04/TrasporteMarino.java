@@ -9,7 +9,7 @@ package paquete04;
  *
  * @author Asus
  */
-public class TransporteMaritimo extends Transporte{
+public class TrasporteMarino extends Transporte{
     
     private String barco;
     

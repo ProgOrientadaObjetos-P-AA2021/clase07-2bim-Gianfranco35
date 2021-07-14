@@ -20,26 +20,26 @@ public class Principal {
         taxi.establecerCooperativaTaxi("Yahuarcuna");
         taxi.establecerTarifa();
         
-        TransporteTranvia tra = new TransporteTranvia();
-        tra.setTranvia("Tranvia 1");
-        tra.establecerTarifa();
+        TransporteTranvia tran = new TransporteTranvia();
+        tran.setTranvia("Tranvia");
+        tran.establecerTarifa();
         
-        TransporteAereo ae = new TransporteAereo();
-        ae.setAereo("avion ");
-        ae.establecerTarifa();
+        TransporteAereo aereo = new TransporteAereo();
+        aereo.setAereo("Avion");
+        aereo.establecerTarifa();
         
-        TransporteMaritimo mar = new TransporteMaritimo();
-        mar.setMaritimo("Barco 1");
-        mar.establecerTarifa();
+        TrasporteMarino marino = new TrasporteMarino();
+        marino.setMaritimo("Barco");
+        marino.establecerTarifa();
  
         TiposTransporte tipos = new TiposTransporte();
         
         ArrayList<Transporte> lista = new ArrayList<>();
         lista.add(bus);
         lista.add(taxi);
-        lista.add(tra);
-        lista.add(ae);
-        lista.add(mar);
+        lista.add(tran);
+        lista.add(aereo);
+        lista.add(marino);
         
         tipos.establecerTransportes(lista);
         tipos.establecerPromedioTarifas();
